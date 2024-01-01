@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
-import { TableComponent } from './pages/table/tabela.component';
+import { TableComponent } from './pages/table/table.component';
+import { ListelementsComponent } from './pages/listelements/listelements.component';
 
 
 
@@ -13,11 +14,11 @@ export const routes: Routes = [{
     component: TableComponent,
     
 },
-// {
+{
 
-//     path: 'elementos',
-//     title: 'Pesquisar Dados de Elementos',
-//     component: ListelementsComponent,
-// },
+    path: 'elementos',
+    title: 'Pesquisar Dados de Elementos',
+    component: ListelementsComponent,
+},
 
 ];

@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 import { RouterLink, RouterOutlet } from "@angular/router";
 
 import { NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
-import { TableComponent } from "./pages/table/tabela.component";
+import { TableComponent } from "./pages/table/table.component";
 
 
 @Component({
