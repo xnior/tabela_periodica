@@ -1,0 +1,99 @@
+:host {
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    span {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        color: var(--black-010);
+
+    }
+
+    p {
+        display: flex;
+        height: 1px;
+        font-size: 12px;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 1px 1px;
+    }
+
+    td {
+        font-family: 'Roboto', monospace;
+        font-size: 15px;
+        border-radius: 7px;
+        border: 1px solid var(--black);
+        padding: 3px;
+        margin: 5px;
+
+
+        &:hover {
+            cursor: pointer;
+            // background-color: var(--grey);
+            transform: scale(1.5);
+            transition: 0.3s;
+        }
+    }
+
+    .ocultar {
+        &:hover {
+            cursor: default;
+            background-color: var(--black);
+            transform: none;
+        }
+    }
+
+    section#legenda {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .ext1 {
+        color: var(--white);
+    }
+
+    .tabela {
+        width: 1200px;
+    }
+
+    div.a {
+        font-size: 10px;
+    }
+    .animGroup{
+        background-color: red;
+
+        
+    }
+    button{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--black);
+        color: var(--white);
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+       
+        &:hover{
+            cursor: pointer;
+            background-color: var(--grey);
+        }}
+}

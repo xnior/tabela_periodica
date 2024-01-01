@@ -1,0 +1,792 @@
+<body>
+    <main>
+      
+      <table class="tabela">
+        <tr>
+          <td id="h" class="nmetal">
+            <p>1</p>
+            H        
+            <div class="a">Hidrogênio</div>
+            <span id="p2">1,008</span>
+          </td>
+          <td class="ocultar" colspan="16">
+            <section id="legenda"></section>
+          </td>
+          <td id="he" class="gnobre">
+            <p>2</p>
+            He
+            <div class="a">Hélio</div>
+            <span id="p2">4,0026</span>
+          </td>
+        </tr>
+        <tr>
+          <td id="li" class="malcalino">
+            <p>3</p>
+            Li
+            <div class="a">Lítio</div>          
+            <span id="p2">6,94</span>
+          </td>
+          <td id="be" class="malcter">
+            <p>4</p>
+            Be
+            <div class="a">Berílio</div>
+            <span id="p2"> 9,0122</span>
+          </td>
+          <td class="ocultar" colspan="10" rowspan="2">
+            <section id="legenda">
+              <button (click)="showClass(actini)" (click)="remove(actini)">
+              <div class="bloco" id="actini"></div>
+              <label for="actini">Actinídios</label>
+            </button>
+            <button (click)="showClass(gnobre)" (click)="remove(gnobre)">
+              <div class="bloco" id="gnobre"></div>
+              <label for="gnobre">Gases nobres</label>
+            </button>
+            <button (click)="showClass(halogen)" (click)="remove(halogen)">
+              <div class="bloco" id="halogen"></div>
+              <label for="halogen">Halogênios</label>
+            </button>
+            <button (click)="showClass(lant)" (click)="remove(lant)">
+              <div class="bloco" id="lant"></div>
+              <label for="lant">Lantanídeos</label>
+            </button>
+            <button (click)="showClass(malcalino)" (click)="remove(malcalino)">
+              <div class="bloco" id="malcalino"></div>
+              <label for="malcalino">Metais alcalinos</label>
+            </button>
+            <button (click)="showClass(mtransicao)" (click)="remove(mtransicao)">
+              <div class="bloco" id="mtransicao"></div>
+              <label for="mtransicao">Metais de transição</label>
+            </button>
+            <button (click)="showClass(malcter)" (click)="remove(malcter)">
+              <div class="bloco" id="malcter"></div>
+              <label for="malcter">Metais alcalino-terrosos</label>
+              </button>
+              <button (click)="showClass(nmetal)" (click)="remove(nmetal)">
+              <div class="bloco" id="nmetal"></div>
+              <label for="nmetal">Não metal</label>
+              </button>
+              <button (click)="showClass(ometal)" (click)="remove(ometal)">
+              <div class="bloco" id="ometal"></div>
+              <label for="ometal">Outros metais</label>
+              </button>
+              <button (click)="showClass(smetal)" (click)="remove(smetal)">
+              <div class="bloco" id="smetal"></div>
+              <label for="smetal">Semi metal</label>
+              </button>
+            </section>
+          </td>
+  
+          <td id="b" class="smetal">
+            <p>5</p>
+            B
+            <div class="a">Boro</div>
+            <span id="p2"> 10,81</span>
+          </td>
+          <td id="c" class="nmetal">
+            <p>6</p>
+            C
+            <div class="a">Carbono</div>
+            <span id="p2"> 12,011</span>
+          </td>
+          <td id="n" class="nmetal">
+            <p>7</p>
+            N
+            <div class="a">Nitrogênio</div>
+            <span id="p2"> 14,007</span>
+          </td>
+          <td id="o" class="nmetal">
+            <p>8</p>
+            O
+            <div class="a">Oxigênio</div>
+            <span id="p2"> 15,999</span>
+          </td>
+          <td id="f" class="halogen" #halogen>
+            <p>9</p>
+            F
+            <div class="a">Flúor</div>
+            <span id="p2"> 18,998</span>
+          </td>
+          <td id="ne" class="gnobre" #gnobre>
+            <p>10</p>
+            Ne<div class="a">Neônio</div>
+            <span id="p2"> 20,180</span>
+          </td>
+        </tr>
+        <tr>
+          <td id="na" class="malcalino" #malcalino>
+            <p>11</p>
+            Na
+            <div class="a">Sódio</div>
+            <span id="p2"> 22,990</span>
+          </td>
+          <td id="mg" class="malcter" #malcter>
+            <p>12</p>
+            Mg
+            <div class="a">Magnésio</div>
+            <span id="p2"> 24,305</span>
+          </td>
+  
+          <td id="al" class="ometal" #ometal>
+            <p>13</p>
+            Al
+            <div class="a">Alumínio</div>
+            <span id="p2"> 26,982</span>
+          </td>
+          <td id="si" class="smetal" #smetal>
+            <p>14</p>
+            Si
+            <div class="a">Silício</div>
+            <span id="p2"> 28,085</span>
+          </td>
+          <td id="p" class="nmetal" #nmetal>
+            <p>15</p>
+            P
+            <div class="a">Fósforo</div>
+            <span id="p2"> 30,974</span>
+          </td>
+          <td id="s" class="nmetal">
+            <p>16</p>
+            S
+            <div class="a">Enxofre</div>
+            <span id="p2"> 32,06</span>
+          </td>
+          <td id="cl" class="halogen">
+            <p>17</p>
+            Cl
+            <div class="a">Cloro</div>
+            <span id="p2"> 35,45</span>
+          </td>
+          <td id="ar" class="gnobre">
+            <p>18</p>
+            Ar
+            <div class="a">Argônio</div>
+            <span id="p2"> 39,948</span>
+          </td>
+        </tr>
+        <tr>
+          <td id="k" class="malcalino">
+            <p>19</p>
+            K
+            <div class="a">Potássio</div>
+            <span id="p2"> 39,098</span>
+          </td>
+          <td id="ca" class="malcter">
+            <p>20</p>
+            Ca
+            <div class="a">Cálcio</div>
+            <span id="p2"> 40,078</span>
+          </td>
+          <td id="sc" class="mtransicao" #mtransicao>
+            <p>21</p>
+            Sc
+            <div class="a">Escândio</div>
+            <span id="p2"> 44,956</span>
+          </td>
+          <td id="ti" class="mtransicao">
+            <p>22</p>
+            Ti
+            <div class="a">Titânio</div>
+            <span id="p2"> 47,867</span>
+          </td>
+          <td id="v" class="mtransicao">
+            <p>23</p>
+            V
+            <div class="a">Vanádio</div>
+            <span id="p2"> 50,942</span>
+          </td>
+          <td id="cr" class="mtransicao">
+            <p>24</p>
+            Cr
+            <div class="a">Cromo</div>
+            <span id="p2"> 51,996</span>
+          </td>
+          <td id="mn" class="mtransicao">
+            <p>25</p>
+            Mn
+            <div class="a">Manganês</div>
+            <span id="p2"> 54,938</span>
+          </td>
+          <td id="fe" class="mtransicao">
+            <p>26</p>
+            Fe
+            <div class="a">Ferro</div>
+            <span id="p2"> 55,845</span>
+          </td>
+          <td id="co" class="mtransicao">
+            <p>27</p>
+            Co
+            <div class="a">Cobalto</div>
+            <span id="p2"> 58,933</span>
+          </td>
+          <td id="ni" class="mtransicao">
+            <p>28</p>
+            Ni
+            <div class="a">Níquel</div>
+            <span id="p2"> 58,693</span>
+          </td>
+          <td id="cu" class="mtransicao">
+            <p>29</p>
+            Cu
+            <div class="a">Cobre</div>
+            <span id="p2"> 63,546</span>
+          </td>
+          <td id="zn" class="mtransicao">
+            <p>30</p>
+            Zn
+            <div class="a">Zinco</div>
+            <span id="p2"> 65,38</span>
+          </td>
+          <td id="ga" class="ometal">
+            <p>31</p>
+            Ga
+            <div class="a">Gálio</div>
+            <span id="p2"> 69,723</span>
+          </td>
+          <td id="ge" class="smetal">
+            <p>32</p>
+            Ge
+            <div class="a">Germânio</div>
+            <span id="p2"> 72,630</span>
+          </td>
+          <td id="as" class="smetal">
+            <p>33</p>
+            As
+            <div class="a">Arsênio</div>
+            <span id="p2"> 74,922</span>
+          </td>
+          <td id="se" class="nmetal">
+            <p>34</p>
+            Se
+            <div class="a">Selênio</div>
+            <span id="p2"> 78,971</span>
+          </td>
+          <td id="br" class="halogen">
+            <p>35</p>
+            Br
+            <div class="a">Bromo</div>
+            <span id="p2"> 79,904</span>
+          </td>
+          <td id="kr" class="gnobre">
+            <p>36</p>
+            Kr
+            <div class="a">Criptônio</div>
+            <span id="p2"> 83,798</span>
+          </td>
+        </tr>
+        <tr>
+          <td id="rb" class="malcalino">
+            <p>37</p>
+            Rb
+            <div class="a">Rubídio</div>
+            <span id="p2"> 85,468</span>
+          </td>
+          <td id="sr" class="malcter">
+            <p>38</p>
+            Sr
+            <div class="a">Estrôncio</div>
+            <span id="p2"> 87,62</span>
+          </td>
+          <td id="y" class="mtransicao">
+            <p>39</p>
+            Y
+            <div class="a">Ítrio</div>
+            <span id="p2"> 88,906</span>
+          </td>
+          <td id="zr" class="mtransicao">
+            <p>40</p>
+            Zr
+            <div class="a">Zircônio</div>
+            <span id="p2"> 91,224</span>
+          </td>
+          <td id="nb" class="mtransicao">
+            <p>41</p>
+            Nb
+            <div class="a">Nióbio</div>
+            <span id="p2"> 92,906</span>
+          </td>
+          <td id="mo" class="mtransicao">
+            <p>42</p>
+            Mo
+            <div class="a">Molibdênio</div>
+            <span id="p2"> 95,95</span>
+          </td>
+          <td id="tc" class="mtransicao">
+            <p>43</p>
+            Tc
+            <div class="a">Tecnécio</div>
+            <span id="p2"> 98</span>
+          </td>
+          <td id="ru" class="mtransicao">
+            <p>44</p>
+            Ru
+            <div class="a">Rutênio</div>
+            <span id="p2"> 101,07</span>
+          </td>
+          <td id="rh" class="mtransicao">
+            <p>45</p>
+            Rh
+            <div class="a">Ródio</div>
+            <span id="p2"> 102,91</span>
+          </td>
+          <td id="pd" class="mtransicao">
+            <p>46</p>
+            Pd
+            <div class="a">Paládio</div>
+            <span id="p2"> 106,42</span>
+          </td>
+          <td id="ag" class="mtransicao">
+            <p>47</p>
+            Ag
+            <div class="a">Prata</div>
+            <span id="p2"> 107,87</span>
+          </td>
+          <td id="cd" class="mtransicao">
+            <p>48</p>
+            Cd
+            <div class="a">Cádmio</div>
+            <span id="p2"> 112,41</span>
+          </td>
+          <td id="In" class="ometal">
+            <p>49</p>
+            In
+            <div class="a">Índio</div>
+            <span id="p2"> 114,82</span>
+          </td>
+          <td id="sn" class="ometal">
+            <p>50</p>
+            Sn
+            <div class="a">Estanho</div>
+            <span id="p2"> 118,71</span>
+          </td>
+          <td id="sb" class="smetal">
+            <p>51</p>
+            Sb
+            <div class="a">Antimônio</div>
+            <span id="p2"> 121,76</span>
+          </td>
+          <td id="te" class="smetal">
+            <p>52</p>
+            Te
+            <div class="a">Telúrio</div>
+            <span id="p2"> 127,60</span>
+          </td>
+          <td id="i" class="halogen">
+            <p>53</p>
+            I
+            <div class="a">Iodo</div>
+            <span id="p2"> 126,90</span>
+          </td>
+          <td id="xe" class="gnobre">
+            <p>54</p>
+            Xe
+            <div class="a">Xenônio</div>
+            <span id="p2"> 131,29</span>
+          </td>
+        </tr>
+        <tr>
+          <td id="cs" class="malcalino">
+            <p>55</p>
+            Cs
+            <div class="a">Césio</div>
+            <span id="p2"> 132,90</span>
+          </td>
+          <td id="ba" class="malcter">
+            <p>56</p>
+            Ba
+            <div class="a">Bário</div>
+            <span id="p2"> 137,33</span>
+          </td>
+          <td id="" class="ext1" (mouseover)="showClass(lant)" (mouseout)="remove(lant)">57-71</td>
+          <td id="hf" class="mtransicao">
+            <p>72</p>
+            Hf
+            <div class="a">Háfnio</div>
+            <span id="p2"> 178,49</span>
+          </td>
+          <td id="ta" class="mtransicao">
+            <p>73</p>
+            Ta
+            <div class="a">Tântalo</div>
+            <span id="p2"> 180,95</span>
+          </td>
+          <td id="w" class="mtransicao">
+            <p>74</p>
+            W
+            <div class="a">Tungstênio</div>
+            <span id="p2"> 183,84</span>
+          </td>
+          <td id="re" class="mtransicao">
+            <p>75</p>
+            Re
+            <div class="a">Rênio</div>
+            <span id="p2"> 186,21</span>
+          </td>
+          <td id="os" class="mtransicao">
+            <p>76</p>
+            Os
+            <div class="a">Ósmio</div>
+            <span id="p2"> 190,23</span>
+          </td>
+          <td id="ir" class="mtransicao">
+            <p>77</p>
+            Ir
+            <div class="a">Irídio</div>
+            <span id="p2"> 192,22</span>
+          </td>
+          <td id="pt" class="mtransicao">
+            <p>78</p>
+            Pt
+            <div class="a">Platina</div>
+            <span id="p2"> 195,08</span>
+          </td>
+          <td id="au" class="mtransicao">
+            <p>79</p>
+            Au
+            <div class="a">Ouro</div>
+            <span id="p2"> 196,97</span>
+          </td>
+          <td id="hg" class="mtransicao">
+            <p>80</p>
+            Hg
+            <div class="a">Mercúrio</div>
+            <span id="p2"> 200,59</span>
+          </td>
+          <td id="tl" class="ometal">
+            <p>81</p>
+            Tl
+            <div class="a">Tálio</div>
+            <span id="p2"> 204,38</span>
+          </td>
+          <td id="pb" class="ometal">
+            <p>82</p>
+            Pb
+            <div class="a">Chumbo</div>
+            <span id="p2"> 207,2</span>
+          </td>
+          <td id="bi" class="ometal">
+            <p>82</p>
+            Bi
+            <div class="a">Bismuto</div>
+            <span id="p2"> 208,98</span>
+          </td>
+          <td id="po" class="smetal">
+            <p>84</p>
+            Po
+            <div class="a">Polônio</div>
+            <span id="p2"> 209</span>
+          </td>
+          <td id="at" class="halogen">
+            <p>85</p>
+            At
+            <div class="a">Astato</div>
+            <span id="p2"> 210</span>
+          </td>
+          <td id="rn" class="gnobre">
+            <p>86</p>
+            Rn
+            <div class="a">Radônio</div>
+            <span id="p2"> 222</span>
+          </td>
+        </tr>
+        <tr>
+          <td id="fr" class="malcalino">
+            <p>87</p>
+            Fr
+            <div class="a">Frâncio</div>
+            <span id="p2"> 223</span>
+          </td>
+          <td id="ra" class="malcter">
+            <p>88</p>
+            Ra
+            <div class="a">Rádio</div>
+            <span id="p2"> 226</span>
+          </td>
+          <td id="" class="ext1" (mouseover)="showClass(actini)" (mouseout)="remove(actini)">89-103</td>
+          <td id="rf" class="mtransicao">
+            <p>104</p>
+            Rf
+            <div class="a">Rutherfórdio</div>
+            <span id="p2"> 267</span>
+          </td>
+          <td id="db" class="mtransicao">
+            <p>105</p>
+            Db
+            <div class="a">Dúbnio</div>
+            <span id="p2"> 268</span>
+          </td>
+          <td id="sg" class="mtransicao">
+            <p>106</p>
+            Sg
+            <div class="a">Seabórgio</div>
+            <span id="p2"> 269</span>
+          </td>
+          <td id="bh" class="mtransicao">
+            <p>107</p>
+            Bh
+            <div class="a">Bóhrio</div>
+            <span id="p2"> 270</span>
+          </td>
+          <td id="hs" class="mtransicao">
+            <p>108</p>
+            Hs
+            <div class="a">Hássio</div>
+            <span id="p2"> 277</span>
+          </td>
+          <td id="mt" class="mtransicao">
+            <p>109</p>
+            Mt
+            <div class="a">Meitnério</div>
+            <span id="p2"> 278</span>
+          </td>
+          <td id="ds" class="mtransicao">
+            <p>110</p>
+            Ds
+            <div class="a">Darmstádio</div>
+            <span id="p2"> 281</span>
+          </td>
+          <td id="rg" class="mtransicao">
+            <p>111</p>
+            Rg
+            <div class="a">Roentgênio</div>
+            <span id="p2"> 282</span>
+          </td>
+          <td id="cn" class="mtransicao">
+            <p>112</p>
+            Cn
+            <div class="a">Copernício</div>
+            <span id="p2"> 285</span>
+          </td>
+          <td id="nh" class="ometal">
+            <p>113</p>
+            Nh
+            <div class="a">Nihônio</div>
+            <span id="p2"> 286</span>
+          </td>
+          <td id="fl" class="ometal">
+            <p>114</p>
+            Fl
+            <div class="a">Fleróvio</div>
+            <span id="p2"> 289</span>
+          </td>
+          <td id="mc" class="ometal">
+            <p>115</p>
+            Mc
+            <div class="a">Moscóvio</div>
+            <span id="p2"> 290</span>
+          </td>
+          <td id="lv" class="ometal">
+            <p>116</p>
+            Lv
+            <div class="a">Livermório</div>
+            <span id="p2"> 293</span>
+          </td>
+          <td id="ts" class="halogen">
+            <p>117</p>
+            Ts
+            <div class="a">Tenessino</div>
+            <span id="p2"> 294</span>
+          </td>
+          <td id="og" class="gnobre">
+            <p>118</p>
+            Og
+            <div class="a">Oganessônio</div>
+            <span id="p2"> 294</span>
+          </td>
+        </tr>
+      </table>
+      <table id="main">
+        <tr>
+          <td id="" class="ocultar" colspan="2"></td>
+          
+          <td id="la" class="lant" #lant>
+            <p>57</p>
+            La
+            <div class="a">Lantânio</div>
+            <span id="p2"> 138,91</span>
+          </td>
+          <td id="ce" class="lant">
+            <p>58</p>
+            Ce
+            <div class="a">Cério</div>
+            <span id="p2"> 140,12</span>
+          </td>
+          <td id="pr" class="lant">
+            <p>59</p>
+            Pr
+            <div class="a">Praseodímio</div>
+            <span id="p2"> 140,91</span>
+          </td>
+          <td id="nd" class="lant">
+            <p>60</p>
+            Nd
+            <div class="a">Neodímio</div>
+            <span id="p2"> 144,24</span>
+          </td>
+          <td id="pm" class="lant">
+            <p>61</p>
+            Pm
+            <div class="a">Promécio</div>
+            <span id="p2"> 145</span>
+          </td>
+          <td id="sm" class="lant">
+            <p>62</p>
+            Sm
+            <div class="a">Samário</div>
+            <span id="p2"> 150,36</span>
+          </td>
+          <td id="eu" class="lant">
+            <p>63</p>
+            Eu
+            <div class="a">Európio</div>
+            <span id="p2"> 151,96</span>
+          </td>
+          <td id="gd" class="lant">
+            <p>64</p>
+            Gd
+            <div class="a">Gadolínio</div>
+            <span id="p2"> 157,25</span>
+          </td>
+          <td id="tb" class="lant">
+            <p>65</p>
+            Tb
+            <div class="a">Térbio</div>
+            <span id="p2"> 158,93</span>
+          </td>
+          <td id="dy" class="lant">
+            <p>66</p>
+            Dy
+            <div class="a">Disprósio</div>
+            <span id="p2"> 162,50</span>
+          </td>
+          <td id="ho" class="lant">
+            <p>67</p>
+            Ho
+            <div class="a">Hólmio</div>
+            <span id="p2"> 164,93</span>
+          </td>
+          <td id="er" class="lant">
+            <p>68</p>
+            Er
+            <div class="a">Érbio</div>
+            <span id="p2"> 167,26</span>
+          </td>
+          <td id="tm" class="lant">
+            <p>69</p>
+            Tm
+            <div class="a">Túlio</div>
+            <span id="p2"> 168,93</span>
+          </td>
+          <td id="yb" class="lant">
+            <p>70</p>
+            Yb
+            <div class="a">Itérbio</div>
+            <span id="p2"> 173,05</span>
+          </td>
+          <td id="lu" class="lant">
+            <p>71</p>
+            Lu
+            <div class="a">Lutécio</div>
+            <span id="p2"> 174,97</span>
+          </td>
+        </tr>
+        <tr>
+          <td id="" class="ocultar" colspan="2"></td>
+  
+          <td id="ac" class="actini" #actini>
+            <p>89</p>
+            Ac
+            <div class="a">Actínio</div>
+            <span id="p2"> 227</span>
+          </td>
+          <td id="th" class="actini" >
+            <p>90</p>
+            Th
+            <div class="a">Tório</div>
+            <span id="p2"> 232,04</span>
+          </td>
+          <td id="pa" class="actini">
+            <p>91</p>
+            Pa
+            <div class="a">Protactínio</div>
+            <span id="p2"> 231,04</span>
+          </td>
+          <td id="u" class="actini">
+            <p>92</p>
+            U
+            <div class="a">Urânio</div>
+            <span id="p2"> 238,03</span>
+          </td>
+          <td id="np" class="actini">
+            <p>93</p>
+            Np
+            <div class="a">Netúnio</div>
+            <span id="p2"> 237</span>
+          </td>
+          <td id="pu" class="actini">
+            <p>94</p>
+            Pu
+            <div class="a">Plutônio</div>
+            <span id="p2"> 244</span>
+          </td>
+          <td id="am" class="actini">
+            <p>95</p>
+            Am
+            <div class="a">Amerício</div>
+            <span id="p2"> 243</span>
+          </td>
+          <td id="cm" class="actini">
+            <p>96</p>
+            Cm
+            <div class="a">Cúrio</div>
+            <span id="p2"> 247</span>
+          </td>
+          <td id="bk" class="actini">
+            <p>97</p>
+            Bk
+            <div class="a">Berquélio</div>
+            <span id="p2"> 247</span>
+          </td>
+          <td id="cf" class="actini">
+            <p>98</p>
+            Cf
+            <div class="a">Califórnio</div>
+            <span id="p2"> 251</span>
+          </td>
+          <td id="es" class="actini">
+            <p>99</p>
+            Es
+            <div class="a">Einstênio</div>
+            <span id="p2"> 252</span>
+          </td>
+          <td id="fm" class="actini">
+            <p>100</p>
+            Fm
+            <div class="a">Férmio</div>
+            <span id="p2"> 257</span>
+          </td>
+          <td id="md" class="actini">
+            <p>101</p>
+            Md
+            <div class="a">Mendelévio</div>
+            <span id="p2"> 258</span>
+          </td>
+          <td id="no" class="actini">
+            <p>102</p>
+            No
+            <div class="a">Nobélio</div>
+            <span id="p2"> 259</span>
+          </td>
+          <td id="lr" class="actini">
+            <p>103</p>
+            Lr
+            <div class="a">Laurêncio</div>
+            <span id="p2"> 262</span>
+          </td>
+        
+        </tr>
+      </table>
+    
+    </main>
+  </body>
+  
