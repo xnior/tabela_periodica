@@ -1,0 +1,55 @@
+:host {
+    .container-router {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 25px;
+
+
+    }
+
+    .topmenu {
+        justify-content: space-between;
+        width: 200px;
+    }
+
+    .titulo {
+        margin: 30px;
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+
+        color: var(--white);
+        font-family: Roboto, "helvetica neue", sans-serif;
+
+    }
+
+
+
+
+    
+    button {
+        border: none;
+        height: 35px;
+        cursor: pointer;
+        
+        
+        background: var(--grey);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        font-family: Roboto, "helvetica neue", sans-serif;
+        font-size: 1rem;
+        
+        
+        &:hover {
+            background: var(--secondary);
+            transition: 0.5s;
+        }
+        
+        
+    }
+}
