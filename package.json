@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy": "ng build --base-href=https://xnior.github.io/tabela_periodica/",
+    "deploy": "gh-pages -d dist/tabela_periodica/browser/"
   },
   "private": true,
   "dependencies": {
