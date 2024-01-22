@@ -11,14 +11,18 @@ import { ListelementsComponent } from './pages/listelements/listelements.compone
 export const routes: Routes = [{
     path: '',
     title: 'Tabela Periodica',
-    component: TableComponent,
+    loadComponent: () => import('./pages/table/table.component').then(m => m.TableComponent),
     
 },
 {
 
     path: 'elementos',
     title: 'Pesquisar Dados de Elementos',
-    component: ListelementsComponent,
-},
+    loadComponent: () => import('./pages/listelements/listelements.component').then(m => m.ListelementsComponent),
+},{
+    path: 'balanceador',
+    title: 'Balanceador de Equações Quimicas',
+    loadComponent: () => import('./pages/balance-calculator/balance-calculator.component').then(m => m.BalanceCalculatorComponent),
+}
 
 ];
