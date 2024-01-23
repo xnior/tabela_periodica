@@ -67,7 +67,16 @@ td {
 
 span {
     border: 0 solid;
-    font-size: 12px;
+}
+span.element{
+    font-size: 25px;
+}
+span.coefficient{
+    color:orangered;
+    font-size: 25px;
+}
+sub{
+    color: orange;
 }
 
 p {
