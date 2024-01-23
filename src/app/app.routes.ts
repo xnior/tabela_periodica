@@ -1,10 +1,4 @@
 import { Routes } from '@angular/router';
-import { ChemBalanceComponent } from './pages/chem-balance/chem-balance.component';
-
-
-
-
-
 
 
 export const routes: Routes = [{
@@ -18,10 +12,11 @@ export const routes: Routes = [{
     path: 'elementos',
     title: 'Pesquisar Dados de Elementos',
     loadComponent: () => import('./pages/listelements/listelements.component').then(m => m.ListelementsComponent),
-},{
-   path: 'balancedor',
-    title: 'Balancedor de Equações Quimicas',
-    component: ChemBalanceComponent,
+},
+{
+  path: 'balanceamento',
+    title: 'Balanceamento de Equações Químicas',
+    loadComponent: () => import('./pages/chem-balance/chem-balance.component').then(m => m.ChemBalanceComponent),
 }
 
 ];
