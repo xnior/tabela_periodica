@@ -2,11 +2,10 @@
     .element-details {
         max-width: 600px;
         margin: 5px;
-        padding: 20px;
+        padding: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 450px;
     }
 
     .element-details h1 {
@@ -14,41 +13,16 @@
         margin-bottom: 10px;
         color: #333;
     }
+.element-info{
+    display: grid;
+}
 
-    .element-info {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 10px;
-    }
-
-    .element-property {
-        margin: 10px 0 5px 0;
-    }
-
-    .element-property strong {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-
-    .element-property span {
-        display: block;
+    span {
         color: #666;
 
     }
 
-    /* Optional: Add more specific styles for different types of properties or elements */
-    .element-property.important-property {
-        font-weight: bold;
-        color: #e44d26;
-        /* Red color, you can change it to your preference */
-    }
 
-    /* Optional: Add more styles as needed */
-    div {
-        display: flex;
-    }
 
-    
 
 }

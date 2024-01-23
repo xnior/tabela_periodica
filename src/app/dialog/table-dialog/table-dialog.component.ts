@@ -7,7 +7,7 @@ import {
 } from "@angular/material/dialog";
 import { chemicalElement } from "../../interface/CHemelem.interface";
 import { CommonModule } from "@angular/common";
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from "@angular/material/button";
 
 @Component({
   selector: "app-table-dialog",
@@ -17,9 +17,11 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrl: "./table-dialog.component.scss",
 })
 export class TableDialogComponent {
-  constructor(@Inject(MAT_DIALOG_DATA) public data: chemicalElement,
-  public matReference: MatDialogRef<TableDialogComponent> 
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data: chemicalElement,
+    public matReference: MatDialogRef<TableDialogComponent>
   ) {}
+
   closeDialog() {
     this.matReference.close();
   }

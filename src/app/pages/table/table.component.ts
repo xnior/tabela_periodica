@@ -37,7 +37,7 @@ export class TableComponent {
         const data = el;
         this.#dialog.open(TableDialogComponent, {
           data,
-          panelClass: "table-dialog",
+          position: { top: '3%', left: '35%'},
         });
       }
     });
