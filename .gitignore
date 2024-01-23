@@ -44,4 +44,5 @@ Thumbs.db
 # Secret files
 src/app/services
 src/app/pages/chem-balance
+src/assets/DB
 
