@@ -104,5 +104,15 @@
   .mat-mdc-row:nth-child(4n) {
     background-color: #eee;
   }
+@media screen and (max-width: 380px){
+  .form-field{
+    width: 100%;
+  }
+  table {
+    width: 100%;
+    table-layout: fixed;
+    
+  }
+}
 
 }

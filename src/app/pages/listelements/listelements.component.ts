@@ -32,7 +32,7 @@ export class ListelementsComponent {
   EN = ELEMENT_DATA_EN;
 
   FILTER: string = "ex: Hidrogénio";
-  POSITION: string = "Posição";
+  POSITION: string = "N°";
   NAME: string = "Nome";
   SYMBOL: string = "Simbolo";
   WEIGHT: string = "Peso";
