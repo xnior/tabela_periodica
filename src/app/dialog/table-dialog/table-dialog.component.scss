@@ -1,4 +1,5 @@
 :host {
+
     .element-details {
         max-width: 600px;
         margin: 5px;
@@ -13,16 +14,12 @@
         margin-bottom: 10px;
         color: #333;
     }
-.element-info{
-    display: grid;
-}
+
+    .element-info {
+        display: grid;
+    }
 
     span {
         color: #666;
-
     }
-
-
-
-
 }
