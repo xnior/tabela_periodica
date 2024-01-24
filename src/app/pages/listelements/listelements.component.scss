@@ -1,36 +1,108 @@
-
 :host {
-  
 
-    .mat-mdc-form-field {
-      font-size: 14px;
-      width: 100%;
-    }
-  
-    .mat-mdc-header-cell {
-      font-size: 14px;
-      color: var(--black-010);
-    }
-  .flags{
+
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .mat-mdc-header-cell {
+    font-size: 14px;
+    color: var(--black-010);
+  }
+
+  .flags {
     width: 75px;
-    
+
     display: flex;
     justify-content: space-between;
   }
-  .right-top{
+
+  .right-top {
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 0 0 15px 0;
   }
-  .mat-mdc-form-field-bottom-align ::before{
-    content:'';
+
+  .mat-mdc-form-field-bottom-align ::before {
+    content: '';
     display: inline;
     height: 1px;
   }
-  input{
+
+  --input-color: #383838;
+  --input-border: #3d3d3d;
+  --input-background: #868686;
+  --input-placeholder: #b6b6b6;
+
+  --input-border-focus: #275EFE;
+
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #EEF4FF;
+
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #678EFE;
+
+
+
+  .form-field {
+    display: block;
+    width: 100%;
+    padding: 8px 16px 8px 25px;
+    line-height: 35px;
+    margin-bottom: 15px;
     font-size: 14px;
-    color: var(--black-010);
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    background: var(--input-background);
+    transition: border .3s ease;
+    width: 391px;
+    background-color: #3e528f;
+
+    &::placeholder {
+      color: var(--input-placeholder);
+      transition: color .75s ease;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: #EEF4FF;
+      border-color: var(--input-border-focus);
+      transition: 1s;
+
+      &::placeholder {
+        color: transparent;
+        transition: 3s;
+      }
+    }
   }
-  
+
+
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    margin-bottom: 50px;
   }
+
+  .table-displayed{
+    background: rgb(235, 235, 235);
+  }
+
+  .row-style {
+    background: rgb(192, 192, 192);
+  }
+  .mat-mdc-row:nth-child(2n),
+  .mat-mdc-row:nth-child(4n) {
+    background-color: #eee;
+  }
+
+}

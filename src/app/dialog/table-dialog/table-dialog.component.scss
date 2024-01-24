@@ -1,6 +1,9 @@
 :host {
 
     .element-details {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
         max-width: 600px;
         margin: 5px;
         padding: 5px;
@@ -21,5 +24,46 @@
 
     span {
         color: #666;
+    }
+    div .border-all{
+        border: 2px solid #333333;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+        width: 80px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    div .border-all:hover{
+        background-color: #dbdbdb;
+    }
+    div .element-small{
+        font-size: 12px;
+        font-weight: bold;
+        color: #333333;
+        display: flex;
+    
+    }
+    div .element-big{
+        font-size: 40px;
+        font-weight: bold;
+        color: #333333;
+        display: flex;
+        justify-content: center;
+    }
+    span{
+        font-size: 12px;
+        font-weight: bold;
+        color: #333333;
+        text-align: right;
+    }
+
+    div .element-bottom {
+        display: flex;
+        justify-content: right;
+        font-size: 15px;
+        font-weight: bold;
     }
 }

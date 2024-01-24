@@ -9,11 +9,13 @@ import { MatPaginatorModule } from "@angular/material/paginator";
 import { FLAGS, ELEMENT_DATA_EN, ELEMENT_DATA_PT } from "../../data/elements";
 import { EDG } from "../../interface/ED.interface";
 import { FLag } from "../../interface/FLag.interface";
+import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "app-listelements",
   standalone: true,
   imports: [
+    CommonModule,
     FormsModule,
     MatTableModule,
     MatInputModule,
@@ -29,7 +31,7 @@ export class ListelementsComponent {
   PT = ELEMENT_DATA_PT;
   EN = ELEMENT_DATA_EN;
 
-  FILTER: string = "Filtrar";
+  FILTER: string = "ex: Hidrogénio";
   POSITION: string = "Posição";
   NAME: string = "Nome";
   SYMBOL: string = "Simbolo";

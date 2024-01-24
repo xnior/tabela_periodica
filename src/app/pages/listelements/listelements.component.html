@@ -15,9 +15,11 @@
       </div>
     </section>
     <!-- <mat-form-field> -->
-      <input matInput (keyup)="applyFilter($event)" placeholder="{{ FILTER }}" />
+      <span>Pesquisar:</span>
+<div class="form-group">
+      <input matInput class="form-field" (keyup)="applyFilter($event)" placeholder="{{ FILTER }}" />
+    </div>
     <!-- </mat-form-field> -->
-  
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
       <!-- Position Column -->
       <ng-container matColumnDef="position">
@@ -43,8 +45,8 @@
         <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
       </ng-container>
   
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns" [ngClass]="{'table-displayed':displayedColumns}"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;let i = dataIndex;"></tr>
     </table>
   </section>
   

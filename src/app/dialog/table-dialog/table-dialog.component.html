@@ -1,75 +1,118 @@
-<div mat-dialog-title class="element-details">
-  <h1 >{{ data.name }}</h1>
+<div class="element-details">
+  <div class="border-all">
+    <div class="element-small">
+      {{ data.atomicNumber }}
+    </div>
+    <div class="element-big">
+      {{ data.element }}
+    </div>
+    <div class="element-bottom">
+      {{ data.atomicMass | number: '1.2-3'}}
+    </div>
+  </div>
+  <h1>{{ data.name }}</h1>
 </div>
 <div mat-dialog-content class="element-info">
   <div>
-    <strong>Element:</strong>
+    <strong>Elemento: </strong>
     <span>{{ data.element }}</span>
   </div>
   <div>
-    <strong>Atomic Number:</strong>
+    <strong>Nome: </strong>
+    <span>{{ data.name }}</span>
+  </div>
+  <div>
+    <strong>Número Atômico: </strong>
     <span>{{ data.atomicNumber }}</span>
   </div>
   <div>
-    <strong>Atomic Mass:</strong>
+    <strong>Massa Atômica: </strong>
     <span>{{ data.atomicMass }}</span>
   </div>
   <div>
-    <strong>Group:</strong>
+    <strong>Grupo: </strong>
     <span>{{ data.group }}</span>
   </div>
   <div>
-    <strong>Period:</strong>
+    <strong>Período: </strong>
     <span>{{ data.period }}</span>
   </div>
   <div>
-    <strong>Block:</strong>
+    <strong>Bloco: </strong>
     <span>{{ data.block }}</span>
   </div>
-  <!-- Add more properties as needed -->
-
-  <!-- Optional properties -->
   <div *ngIf="data.state">
-    <strong>Estado:</strong>
+    <strong>Estado: </strong>
     <span>{{ data.state }}</span>
   </div>
   <div *ngIf="data.symbol">
-    <strong>Símbolo:</strong>
+    <strong>Símbolo: </strong>
     <span>{{ data.symbol }}</span>
   </div>
   <div class="element-property space" *ngIf="data.electronConfig">
-    <strong>Configuração do Eletron:</strong>
+    <strong>Configuração do Elétron: </strong>
     <span>{{ data.electronConfig }}</span>
   </div>
   <div *ngIf="data.electronegativity !== undefined">
-    <strong>Eletron:</strong>
+    <strong>Eletronegatividade: </strong>
     <span>{{ data.electronegativity }}</span>
   </div>
   <div *ngIf="data.ionRadius !== undefined">
-    <strong>Raio:</strong>
+    <strong>Raio do Íon: </strong>
     <span>{{ data.ionRadius }}</span>
   </div>
   <div *ngIf="data.oxidationStates">
-    <strong>Estado Oxi:</strong>
+    <strong>Estados de Oxidação: </strong>
     <span>{{ data.oxidationStates }}</span>
   </div>
   <div>
-    <strong>Raio Wan der Waal:</strong>
+    <strong>Raio Atômico: </strong>
+    <span>{{ data.atomicRadius }}</span>
+  </div>
+  <div>
+    <strong>Raio de Van der Waals: </strong>
     <span>{{ data.vanDelWaalsRadius }}</span>
   </div>
   <div>
-    <strong>Energia Ion:</strong>
+    <strong>Energia de Ionização: </strong>
     <span>{{ data.ionizationEnergy }}</span>
   </div>
   <div>
-    <strong>Afini Eletron:</strong>
+    <strong>Afinidade Eletrônica: </strong>
     <span>{{ data.electronAffinity }}</span>
   </div>
   <div>
-    <strong>Raio Atômico:</strong>
-    <span>{{ data.atomicRadius }}</span>
+    <strong>Estado Padrão: </strong>
+    <span>{{ data.standardState }}</span>
   </div>
+  <div>
+    <strong>Tipo de Ligação: </strong>
+    <span>{{ data.bondingType }}</span>
+  </div>
+  <div>
+    <strong>Ponto de Fusão: </strong>
+    <span>{{ data.meltingPoint }} °C</span>
+  </div>
+  <div>
+    <strong>Ponto de Ebulição: </strong>
+    <span>{{ data.boilingPoint }} °C</span>
+  </div>
+  <div>
+    <strong>Densidade: </strong>
+    <span>{{ data.density }}</span>
+  </div>
+  <div>
+    <strong>Bloco do Grupo: </strong>
+    <span>{{ data.groupBlock }}</span>
+  </div>
+  <div>
+    <strong>Ano de Descoberta: </strong>
+    <span>{{ data.yearDiscovered }}</span>
+  </div>
+  <div>
+    <strong>Elétrons por Camada: </strong>
+    <span>{{ data.electronsPerShell }}</span>
+  </div>
+  
 </div>
-<button mat-raised-button color="warn" (click)="closeDialog()">
-  Fechar
-</button>
+<button mat-raised-button color="warn" (click)="closeDialog()">Fechar</button>
