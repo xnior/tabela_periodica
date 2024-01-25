@@ -61,14 +61,12 @@ export class ListelementsComponent {
 
   changeDisplayed(name: string) {
     if (name === "PT") {
-      this.FILTER = "Filtrar";
-      this.POSITION = "Posição";
+      this.FILTER = "ex: Hidrogênio";
       this.NAME = "Nome";
       this.SYMBOL = "Simbolo";
       this.WEIGHT = "Peso";
     } else {
-      this.FILTER = "Filter";
-      this.POSITION = "Position";
+      this.FILTER = "ex: Hydrogen";
       this.NAME = "Name";
       this.SYMBOL = "Symbol";
       this.WEIGHT = "Weight";
