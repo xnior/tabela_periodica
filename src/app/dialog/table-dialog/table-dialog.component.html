@@ -7,7 +7,7 @@
       {{ data.element }}
     </div>
     <div class="element-bottom">
-      {{ data.atomicMass | number: '1.2-3'}}
+      {{ data.atomicMass | number : "1.2-3" }}
     </div>
   </div>
   <h1>{{ data.name }}</h1>
@@ -113,6 +113,7 @@
     <strong>Elétrons por Camada: </strong>
     <span>{{ data.electronsPerShell }}</span>
   </div>
-  
 </div>
-<button mat-raised-button color="warn" (click)="closeDialog()">Fechar</button>
+<section>
+  <button (click)="closeDialog()">Fechar</button>
+</section>

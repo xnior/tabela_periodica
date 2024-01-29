@@ -25,7 +25,8 @@
     span {
         color: #666;
     }
-    div .border-all{
+
+    div .border-all {
         border: 2px solid #333333;
         border-radius: 5px;
         padding: 5px;
@@ -36,24 +37,28 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    div .border-all:hover{
+
+    div .border-all:hover {
         background-color: #dbdbdb;
     }
-    div .element-small{
+
+    div .element-small {
         font-size: 12px;
         font-weight: bold;
         color: #333333;
         display: flex;
-    
+
     }
-    div .element-big{
+
+    div .element-big {
         font-size: 40px;
         font-weight: bold;
         color: #333333;
         display: flex;
         justify-content: center;
     }
-    span{
+
+    span {
         font-size: 12px;
         font-weight: bold;
         color: #333333;
@@ -65,5 +70,26 @@
         justify-content: right;
         font-size: 15px;
         font-weight: bold;
+    }
+
+    button {
+        display: grid;
+        background-color: orangered;
+        color: #ffffff;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+        height: 30px;
+        font-size: 16px;
+        font-weight: 500;
+
+        &:hover {
+            background-color: #ff7f50;
+        }
+    }
+
+    section {
+        display: grid;
     }
 }

@@ -20,7 +20,9 @@ export class TableDialogComponent {
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: chemicalElement,
     public matReference: MatDialogRef<TableDialogComponent>
-  ) {}
+  ) {
+    matReference.disableClose = true;
+  }
 
   closeDialog() {
     this.matReference.close();
