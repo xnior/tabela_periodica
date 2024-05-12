@@ -214,7 +214,7 @@ export const ELEMENT_DATA_PT: Array<EDG> = [
   { position: 79, name: "Ouro", weight: 196.9665, symbol: "Au" },
   { position: 80, name: "Mercúrio", weight: 200.59, symbol: "Hg" },
   { position: 81, name: "Tálio", weight: 204.3833, symbol: "Tl" },
-  { position: 82, name: "Liderar", weight: 207.2, symbol: "Pb" },
+  { position: 82, name: "Chumbo", weight: 207.2, symbol: "Pb" },
   { position: 83, name: "Bismuto", weight: 208.9804, symbol: "Bi" },
   { position: 84, name: "Polônio", weight: 209, symbol: "Po" },
   { position: 85, name: "Astatino", weight: 210, symbol: "At" },
