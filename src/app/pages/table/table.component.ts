@@ -20,7 +20,7 @@ export class TableComponent {
     filters.forEach(function (el, filters) {
       setTimeout(function () {
         el.classList.add("animGroup");
-      }, 10 * filters);
+      }, 50 * filters);
     });
   }
 
