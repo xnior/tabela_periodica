@@ -25,6 +25,7 @@
     "@ng-bootstrap/ng-bootstrap": "^17.0.1",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "cookie": "^1.0.1",
     "mathjs": "^13.2.0",
     "micromatch": "^4.0.8",
     "npm": "^10.9.0",
