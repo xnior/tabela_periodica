@@ -12,19 +12,18 @@ import { FLag } from "../../interface/FLag.interface";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-listelements",
-  standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    MatTableModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatSortModule,
-    MatPaginatorModule,
-  ],
-  templateUrl: "./listelements.component.html",
-  styleUrl: "./listelements.component.scss",
+    selector: "app-listelements",
+    imports: [
+        CommonModule,
+        FormsModule,
+        MatTableModule,
+        MatInputModule,
+        MatFormFieldModule,
+        MatSortModule,
+        MatPaginatorModule,
+    ],
+    templateUrl: "./listelements.component.html",
+    styleUrl: "./listelements.component.scss"
 })
 export class ListelementsComponent {
   displayedColumns: string[] = ["position", "name", "weight", "symbol"];

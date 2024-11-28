@@ -5,11 +5,10 @@ import { TableDialogComponent } from "../../dialog/table-dialog/table-dialog.com
 import { chemicalElements } from "../../../assets/DB/elements";
 
 @Component({
-  selector: "app-table",
-  standalone: true,
-  imports: [ReactiveFormsModule, MatDialogModule],
-  templateUrl: "./table.component.html",
-  styleUrl: "./table.component.scss",
+    selector: "app-table",
+    imports: [ReactiveFormsModule, MatDialogModule],
+    templateUrl: "./table.component.html",
+    styleUrl: "./table.component.scss"
 })
 export class TableComponent {
   #dialog = inject(MatDialog);
