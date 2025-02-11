@@ -40,8 +40,8 @@
     "ws": "^8.18.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^19.1.5",
-    "@angular/cli": "^19.1.5",
+    "@angular-devkit/build-angular": "^19.1.6",
+    "@angular/cli": "^19.1.6",
     "@angular/compiler-cli": "^19.1.4",
     "@angular/localize": "^19.1.4",
     "@types/gaussian-elimination": "^1.0.2",
