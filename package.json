@@ -39,8 +39,8 @@
     "ws": "^8.18.3"
   },
   "devDependencies": {
-    "@angular/build": "^20.1.6",
-    "@angular/cli": "^20.1.6",
+    "@angular/build": "^20.2.0",
+    "@angular/cli": "^20.2.0",
     "@angular/compiler-cli": "^20.1.7",
     "@angular/localize": "^20.1.7",
     "@types/gaussian-elimination": "^1.0.2",
