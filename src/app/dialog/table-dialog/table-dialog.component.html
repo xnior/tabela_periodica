@@ -41,30 +41,42 @@
     <strong>Bloco: </strong>
     <span>{{ data.block }}</span>
   </div>
-  <div *ngIf="data.state">
-    <strong>Estado: </strong>
-    <span>{{ data.state }}</span>
-  </div>
-  <div *ngIf="data.symbol">
-    <strong>Símbolo: </strong>
-    <span>{{ data.symbol }}</span>
-  </div>
-  <div class="element-property space" *ngIf="data.electronConfig">
-    <strong>Configuração do Elétron: </strong>
-    <span>{{ data.electronConfig }}</span>
-  </div>
-  <div *ngIf="data.electronegativity !== undefined">
-    <strong>Eletronegatividade: </strong>
-    <span>{{ data.electronegativity }}</span>
-  </div>
-  <div *ngIf="data.ionRadius !== undefined">
-    <strong>Raio do Íon: </strong>
-    <span>{{ data.ionRadius }}</span>
-  </div>
-  <div *ngIf="data.oxidationStates">
-    <strong>Estados de Oxidação: </strong>
-    <span>{{ data.oxidationStates }}</span>
-  </div>
+  @if (data.state) {
+    <div>
+      <strong>Estado: </strong>
+      <span>{{ data.state }}</span>
+    </div>
+  }
+  @if (data.symbol) {
+    <div>
+      <strong>Símbolo: </strong>
+      <span>{{ data.symbol }}</span>
+    </div>
+  }
+  @if (data.electronConfig) {
+    <div class="element-property space">
+      <strong>Configuração do Elétron: </strong>
+      <span>{{ data.electronConfig }}</span>
+    </div>
+  }
+  @if (data.electronegativity !== undefined) {
+    <div>
+      <strong>Eletronegatividade: </strong>
+      <span>{{ data.electronegativity }}</span>
+    </div>
+  }
+  @if (data.ionRadius !== undefined) {
+    <div>
+      <strong>Raio do Íon: </strong>
+      <span>{{ data.ionRadius }}</span>
+    </div>
+  }
+  @if (data.oxidationStates) {
+    <div>
+      <strong>Estados de Oxidação: </strong>
+      <span>{{ data.oxidationStates }}</span>
+    </div>
+  }
   <div>
     <strong>Raio Atômico: </strong>
     <span>{{ data.atomicRadius }}</span>
